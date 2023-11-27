@@ -1,11 +1,9 @@
 import "./styles.css";
 
-function Button({ name = "Send", type = "button", children }) {
-  console.log(name);
+function Button({ name = "Send", type = "button", onClick }) {
   return (
-    <button className="button-component" type={type}>
+    <button onClick={onClick} className="button-component" type={type}>
       {name}
-      {children}
     </button>
   );
 }
