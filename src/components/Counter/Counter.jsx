@@ -1,20 +1,11 @@
-import { useState } from "react";
+// Забирает все из библиотеки, но делать так не нужно, только когда неоюходимо
+// import * as React from 'react';
 
 import Button from "../Button";
 
 import "./styles.css";
 
-function Counter() {
-  const [count, setCount] = useState(0);
-
-  const onPlus = () => {
-    setCount((prevValue) => prevValue + 1);
-  };
-
-  const onMinus = () => {
-    setCount((prevValue) => prevValue - 1);
-  };
-
+function Counter({ count, onPlus, onMinus }) {
   return (
     <div className="counter-wrapper">
       <div className="button-control">
