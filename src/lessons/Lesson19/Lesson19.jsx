@@ -85,7 +85,12 @@ function Lesson19() {
         />
       </div>
       <div>Counter</div>
-      <Counter count={count} onPlus={onPlus} onMinus={onMinus} />
+      <Counter
+        // text="Hello World"
+        count={count}
+        onPlus={onPlus}
+        onMinus={onMinus}
+      />
       <div>Пример с пустым стейтом</div>
       <div className="buttonControl">
         <Button name="Add name" onClick={() => setName("Alex")} />
