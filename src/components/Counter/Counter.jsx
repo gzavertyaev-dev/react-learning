@@ -5,9 +5,11 @@ import Button from "../Button";
 
 import "./styles.css";
 
-function Counter({ count, onPlus, onMinus }) {
+function Counter({ count, onPlus, onMinus, text }) {
+  console.log(text);
   return (
     <div className="counter-wrapper">
+      {text && <p>{text}</p>}
       <div className="button-control">
         <Button name="-" onClick={onMinus} />
       </div>
